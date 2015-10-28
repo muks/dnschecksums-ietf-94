@@ -148,8 +148,9 @@
     for domains of medium-to-high popularity and must not be ignored.
   \item Truncating UDP on purpose to force TCP is worse. It triples
     RTT (1 for UDP attempt, +2 until TCP first data).
-  \item See \texttt{5966bis} for commentary on performance of DNS over
-    TCP vs. UDP.
+  \item There are concerns whether network stacks and DNS
+    implementations are ready to handle the onslaught of TCP-only DNS
+    traffic (which involves additional state).
   \end{itemize}
 }
 
