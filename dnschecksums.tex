@@ -112,8 +112,8 @@
   \item DNSSEC does not protect contents of messages that do not have
     RRSIGs, such as NS records and glue at a delegation point in a
     referral, and EDNS0 options
-  \item DNSSEC cannot be used to validate the {\em collection} of RRs
-    chosen by a server to be part of a message
+  \item DNSSEC cannot be used to validate {\em what} RRs a server sent
+    to a client, only the contents of RRs. A stupid example:
     \begin{itemize}
     \item Consider a HTTP service `files.example.com' with address
       192.0.2.1 for users in Japan and address 198.51.100.1 for users in
